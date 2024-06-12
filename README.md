@@ -3,6 +3,8 @@
 This repository contains the implementation of the concepts discussed in the blog post "Understanding Parameter Calculation in Transformer-Based Models: Simplified". 
 The post provides a detailed explanation of the Transformer architecture and the intricacies involved in counting its parameters.
 
+https://medium.com/@geosar/understanding-parameter-calculation-in-transformer-based-models-simplified-e8c7f4e059d8
+
 ## Overview
 
 The blog post breaks down the Transformer architecture into three main components:
