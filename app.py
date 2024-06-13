@@ -104,4 +104,25 @@ if __name__ == "__main__":
 
     # Render the footer
     st.markdown(copyright_text)
+
+    # removes the three dots option at the top right
+    st.markdown(
+    """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+    #removes the Deploy button at the top right
+    st.markdown(
+    r"""
+    <style>
+    .stDeployButton {
+            visibility: hidden;
+        }
+    </style>
+    """, unsafe_allow_html=True
+    )
     
