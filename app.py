@@ -49,6 +49,8 @@ def main():
     vocab_size = st.number_input("Vocabulary Size", value=50257)
     hidden_size = st.number_input("Embedding or Hidden Size (d_model)", value=768)
     sequence_length = st.number_input("Sequence Length", value=1024)
+    ffn_expansion_factor = st.number_input("FFN Expansion Factor", value=4)
+    kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
     st.write("The following parameters can be left with their default values in most cases")
     tied_embeddings = st.checkbox("Tied Embeddings", value=True)
     
@@ -60,8 +62,8 @@ def main():
             moe_params['num_experts'] = st.number_input("Number of Experts (MoE)", value=8)
             moe_params['expert_interval'] = st.number_input("Expert Interval (MoE)", value=1)
             moe_params['topk'] = st.number_input("Top-k routing (MoE)", value=1)
-            ffn_expansion_factor = st.number_input("FFN Expansion Factor", value=4)
-            kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
+            
+            
 
     if st.button("Calculate Parameters"):
         args = {
