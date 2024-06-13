@@ -125,4 +125,11 @@ if __name__ == "__main__":
     </style>
     """, unsafe_allow_html=True
     )
+    # Add custom CSS to hide the GitHub icon
+    hide_github_icon = """
+    #GithubIcon {
+      visibility: hidden;
+    }
+    """
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
     
