@@ -50,7 +50,8 @@ def main():
     hidden_size = st.number_input("Embedding or Hidden Size (d_model)", value=768)
     sequence_length = st.number_input("Sequence Length", value=1024)
     ffn_expansion_factor = st.number_input("FFN Expansion Factor", value=4)
-    kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
+    #kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
+    kv_size_ratio = 1.0
     st.write("The following parameters can be left with their default values in most cases")
     tied_embeddings = st.checkbox("Tied Embeddings", value=True)
     
