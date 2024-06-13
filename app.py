@@ -60,9 +60,8 @@ def main():
             moe_params['num_experts'] = st.number_input("Number of Experts (MoE)", value=8)
             moe_params['expert_interval'] = st.number_input("Expert Interval (MoE)", value=1)
             moe_params['topk'] = st.number_input("Top-k routing (MoE)", value=1)
-
-    ffn_expansion_factor = st.number_input("FFN Expansion Factor", value=4)
-    kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
+            ffn_expansion_factor = st.number_input("FFN Expansion Factor", value=4)
+            kv_size_ratio = st.number_input("KV Size Ratio", value=1.0)
 
     if st.button("Calculate Parameters"):
         args = {
